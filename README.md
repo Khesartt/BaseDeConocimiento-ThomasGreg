@@ -3,7 +3,7 @@ Prototipo de un Base de Conocimiento accesible mediante el uso de un aplicativo 
 
 
 
-
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 
 
