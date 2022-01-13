@@ -7,18 +7,18 @@ Prototipo de un Base de Conocimiento accesible mediante el uso de un aplicativo 
 
 ejemplo de la base de conocimiento
 
-<img src="https://github.com/Khesartt/BaseDeConocimiento-ThomasGreg/blob/main/base%20de%20conocimiento.gif" width="200" height="200" />
+<img src="https://github.com/Khesartt/BaseDeConocimiento-ThomasGreg/blob/main/base%20de%20conocimiento.gif" width="2000" height="2000" />
 
 
 ejemplo de registro y login para el foro general
 
 
-<img src="https://github.com/Khesartt/BaseDeConocimiento-ThomasGreg/blob/main/login%20y%20register.gif" width="200" height="200" />
+<img src="https://github.com/Khesartt/BaseDeConocimiento-ThomasGreg/blob/main/login%20y%20register.gif" width="2000" height="2000" />
 
 ejemplo documentacion en swagger del backend
 
 
-<img src="https://github.com/Khesartt/BaseDeConocimiento-ThomasGreg/blob/main/documentacion%20swagger.gif" width="200" height="200" />
+<img src="https://github.com/Khesartt/BaseDeConocimiento-ThomasGreg/blob/main/documentacion%20swagger.gif" width="2000" height="2000" />
 
 
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
