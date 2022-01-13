@@ -1,0 +1,10 @@
+.card {
+    box-shadow: 20px 20px 40px -10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 60px;
+    background-color: #F0F7F4;
+}
+
+.container {
+    width: 750px;
+}

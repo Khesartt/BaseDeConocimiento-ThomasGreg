@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css">
+
+    <title>BDC</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="abs-center">
+            <h1>por favor digita el cliente que desees buscar, asegurate de que este bien escrito.</h1>
+            <form [formGroup]="formClient" (ngSubmit)="clienteSeleccionado()">
+                <div class="form-group">
+
+                    <input type="text" class="form-control" formControlName="nombre" placeholder="Cliente">
+
+                </div>
+                <div class="form-group">
+
+                    <button class="btn btn-success btn-lg btn-block" (click)="show=true" [disabled]="formClient.invalid" type="submit">Aceptar</button>
+
+
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="container" *ngIf="show">
+        <br><br>
+        <h2>Productos</h2>
+        <br>
+        <div class="form-group">
+            <input type="text" [(ngModel)]="productoSearch" placeholder="Buscar" name="productoSearch" class="form-control">
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="table" *ngIf="show">
+                    <tr>
+                        <th scope="col">nombre</th>
+                        <th scope="col">descripcion</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let productos of galleryTVService.listProduct | filter : productoSearch">
+                        <td>{{productos.nombre}}</td>
+                        <td>{{productos.descripcion}}</td>
+                        <td>
+                            <button class="btn btn-info" [routerLink]="'/home/galeriaTV/code'" (click)=enviarProducto(productos,0) type="submit">Entrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+    <div class="container" *ngIf="show">
+        <br><br>
+        <h2>Aplicativos</h2>
+        <br>
+        <div class="form-group">
+            <input type="text" [(ngModel)]="aplicativoSearch" placeholder="Buscar" name="aplicativoSearch" class="form-control">
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="table" *ngIf="show">
+                    <tr>
+                        <th scope="col">nombre</th>
+                        <th scope="col">descripcion</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let aplicativos of galleryTVService.listAplication | filter : aplicativoSearch">
+                        <td scope="row">{{aplicativos.nombre}}</td>
+                        <td scope="row">{{aplicativos.descripcion}}</td>
+                        <td>
+                            <button class="btn btn-info" [routerLink]="'/home/galeriaTV/code'" (click)=enviarAplicativo(aplicativos,1) type="submit">Entrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+        </div>
+
+
+    </div>
+
+    <br>
+    <br><br><br><br><br>
+
+
+</body>
+
+</html>

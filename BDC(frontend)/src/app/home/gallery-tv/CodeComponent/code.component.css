@@ -1,0 +1,164 @@
+.body {
+    padding: 10px;
+}
+
+.container-fluid {
+    padding: 100px;
+    border-color: black;
+    border-width: 2px;
+}
+
+.col-md-auto {
+    padding: 10px;
+}
+
+.container-fluid-1 {
+    background-color: #00693eff;
+}
+
+.test {
+    border-radius: 10px;
+}
+
+
+/* card flip animation */
+
+.flip-card {
+    background-color: #EDFFF6;
+    /* Genera un efecto 3D */
+    perspective: 3000px;
+    width: 500px;
+    height: 200px;
+    border: 0px;
+}
+
+
+/* Este contenedor nos posiciona los dos lados de la tarjeta */
+
+.flip-card-inner {
+    width: 500px;
+    height: 200px;
+    transition: transform 0.6s;
+    /* duracion de la animacion */
+    transform-style: preserve-3d;
+}
+
+
+/* Crea la animación para girar la tarjeta de forma horizontal cuando el ratón se pone encima*/
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Estructura básica de las dos caras */
+
+.flip-card-front,
+.flip-card-back {
+    position: center;
+    /* necesario para posicionar las dos caras a la misma altura */
+    width: 500px;
+    height: 200px;
+    backface-visibility: hidden;
+    /* nos genera una sombra */
+    box-shadow: 20px 20px 40px -10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #EDFFF6;
+}
+
+.flip-card-front img {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flip-card-front .mask {
+    position: absolute;
+    /* hacemos que ocupe toda la imagen */
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+    /* color de la mascara */
+    /* redondeamos la mascara para que se ajuste a la imagen */
+    border-radius: 10px;
+    /* Posición del título en la parte frontal de la tarjeta */
+}
+
+
+/* card flip animation */
+
+.flip-card {
+    background-color: transparent;
+    /* Genera un efecto 3D */
+    perspective: 3000px;
+    width: 500px;
+    height: 200px;
+    border: 0px;
+}
+
+
+/* Este contenedor nos posiciona los dos lados de la tarjeta */
+
+.flip-card-inner {
+    width: 500px;
+    height: 200px;
+    transition: transform 0.6s;
+    /* duracion de la animacion */
+    transform-style: preserve-3d;
+}
+
+
+/* Crea la animación para girar la tarjeta de forma horizontal cuando el ratón se pone encima*/
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Estructura básica de las dos caras */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    /* necesario para posicionar las dos caras a la misma altura */
+    width: 500px;
+    height: 200px;
+    backface-visibility: hidden;
+    /* nos genera una sombra */
+    box-shadow: 20px 20px 40px -10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+}
+
+.flip-card-front .align-end {
+    position: absolute;
+    top: 85%;
+    left: 10px;
+    color: #fafafa;
+    font-size: 1.5em;
+}
+
+
+/* Estructura específica de la cara trasera */
+
+.flip-card-back {
+    background-color: #EDFFF6;
+    transform: rotateY(180deg);
+}
+
+.card-title {
+    font-size: 45px;
+    text-align: left;
+}
+
+.card-text {
+    text-align: left;
+    font-size: 22.5px;
+    margin: 25px;
+    padding-top: 10px;
+}

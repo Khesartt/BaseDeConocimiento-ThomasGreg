@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="body">
+            <h4 style="margin-bottom: 60px;">Selecciona una entrada para mostrar los datos de la misma, si no encuentras lo que buscas o tienes una mejor solucion considera dirigirte al foro y comentar para que podamos enterarnos.</h4>
+        </div>
+    </div>
+    <div class="card text-center" *ngFor="let code of codeService.listCode2">
+        <div class="card-header">
+            <i class="fas fa-angle-double-down"></i>&nbsp;&nbsp;Inicio de entrada&nbsp;&nbsp;<i class="fas fa-angle-double-down"></i>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{code.nombre}}</h5>
+            <p class="card-text">{{code.descripcion}}</p>
+            <h5>Jquery diseñado para la solucion</h5>
+            <h6>ten presente las variables que se deben cambiar asi como de los comentarios del mismo</h6>
+            <pre class="codigo" style="margin-bottom: 30px;"><code class="language-sql">{{code.codigo}}</code></pre>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-bell "></i>&nbsp;&nbsp;Observaciones</h5>
+                    <p class="card-text">{{code.observaciones}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-muted">
+            <i class="fas fa-angle-double-up"></i>&nbsp;&nbsp;fin de la entrada&nbsp;&nbsp;<i class="fas fa-angle-double-up"></i>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>BDC</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+
+            <div class="card-body">
+                <h3>Ingreso de Usuario</h3>
+                <form [formGroup]="form" (ngSubmit)="ingresoUsuario()" class="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" formControlName="usuario" placeholder="usuario">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="password" class="form-control" formControlName="contraseña" placeholder="contraseña">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-success btn-lg btn-block col-md-9" style="align-self: center;" [disabled]="form.invalid" type="submit">Entrar</button>
+                    </div>
+
+                </form>
+                <hr>
+                <a class="link" href="/foroGeneral/register">¿Registro de usuario?</a>
+                <br>
+
+                <i class="fas fa-long-arrow-alt-left" style="padding-right: 10px;padding-top: 20px;cursor:pointer;" (click)="redireccion(8)"></i>
+                <i class=" fas fa-home " style="padding-right: 10px;padding-top: 20px;cursor:pointer;" (click)="redireccion(1)"></i>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

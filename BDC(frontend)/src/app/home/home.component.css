@@ -1,0 +1,180 @@
+* {
+    font-family: 'Acme', sans-serif;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/background.png");
+}
+
+.title {
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.lead {
+    font-size: 25px;
+    color: white;
+    text-align: justify;
+    padding-bottom: 250px;
+}
+
+
+/* card flip animation */
+
+.flip-card {
+    background-color: transparent;
+    /* Genera un efecto 3D */
+    perspective: 3000px;
+    width: 300px;
+    height: 800px;
+    border: 0px;
+}
+
+
+/* Este contenedor nos posiciona los dos lados de la tarjeta */
+
+.flip-card-inner {
+    width: 300px;
+    height: 600px;
+    transition: transform 0.6s;
+    /* duracion de la animacion */
+    transform-style: preserve-3d;
+}
+
+
+/* Crea la animación para girar la tarjeta de forma horizontal cuando el ratón se pone encima*/
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Estructura básica de las dos caras */
+
+.flip-card-front,
+.flip-card-back {
+    position: center;
+    /* necesario para posicionar las dos caras a la misma altura */
+    width: 300px;
+    height: 600px;
+    backface-visibility: hidden;
+    /* nos genera una sombra */
+    box-shadow: 20px 20px 40px -10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.flip-card-front img {
+    width: 300px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flip-card-front .mask {
+    position: absolute;
+    /* hacemos que ocupe toda la imagen */
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    /* color de la mascara */
+    /* redondeamos la mascara para que se ajuste a la imagen */
+    border-radius: 10px;
+    /* Posición del título en la parte frontal de la tarjeta */
+}
+
+
+/* card flip animation */
+
+.flip-card {
+    background-color: transparent;
+    /* Genera un efecto 3D */
+    perspective: 3000px;
+    width: 300px;
+    height: 800px;
+    border: 0px;
+}
+
+
+/* Este contenedor nos posiciona los dos lados de la tarjeta */
+
+.flip-card-inner {
+    width: 300px;
+    height: 600px;
+    transition: transform 0.6s;
+    /* duracion de la animacion */
+    transform-style: preserve-3d;
+}
+
+
+/* Crea la animación para girar la tarjeta de forma horizontal cuando el ratón se pone encima*/
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Estructura básica de las dos caras */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    /* necesario para posicionar las dos caras a la misma altura */
+    width: 300px;
+    height: 600px;
+    backface-visibility: hidden;
+    /* nos genera una sombra */
+    box-shadow: 20px 20px 40px -10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.flip-card-front .align-end {
+    position: absolute;
+    top: 85%;
+    left: 10px;
+    color: #fafafa;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+/* Estructura específica de la cara trasera */
+
+.flip-card-back {
+    background-color: #EDFFF6;
+    transform: rotateY(180deg);
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.card-title {
+    font-size: 45px;
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 22.5px;
+    margin: 25px;
+    padding-top: 10px;
+}
+
+.btn.btn-outline-success {
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BDC.Infraestructura.API</name>
+    </assembly>
+    <members>
+        <member name="M:BDC.Infraestructura.API.Controllers.AplicationController.Get">
+            <summary>
+            Obtener todos los aplicativos existentes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDC.Infraestructura.API.Controllers.AplicationController.Get(System.Guid)">
+            <summary>
+            Obtener aplicacion por id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDC.Infraestructura.API.Controllers.AplicationController.Post(BDC.Dominio.Aplicativo)">
+            <summary>
+            agregar un aplicativo a la tabla de aplicativos
+            </summary>
+            <param name="aplicativo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BDC.Infraestructura.API.Controllers.AplicationController.Post(System.Collections.Generic.List{BDC.Dominio.Aplicativo})">
+            <summary>
+            agregar varios aplicativos a la tabla de aplicativos
+            </summary>
+            <param name="aplicativo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BDC.Infraestructura.API.Controllers.BusinessController.Get">
+            <summary>
+            Obtener todos los negocios existentes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDC.Infraestructura.API.Controllers.BusinessController.Get(System.Guid)">
+            <summary>
+            Obtener negocio por id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BDC.Infraestructura.API.Controllers.BusinessController.Post(BDC.Dominio.Negocio)">
+            <summary>
+            agregar un negocios a la tabla de negocios
+            </summary>
+            <param name="negocio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BDC.Infraestructura.API.Controllers.BusinessController.Post(System.Collections.Generic.List{BDC.Dominio.Negocio})">
+            <summary>
+            agregar varios negocios a la tabla de negocios
+            </summary>
+            <param name="negocio"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

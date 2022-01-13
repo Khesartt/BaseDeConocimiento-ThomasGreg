@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 style="text-align: center;">{{user.nombres}}&nbsp;{{user.apellidos}}</h1>
+        <div class="jumbtron">
+            <h1 class="text-center">{{user.rol}}</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <h6 class="text-center">
+                        Agrega un Comentario
+                    </h6>
+                    <app-add-coment></app-add-coment>
+                </div>
+                <div class="col-md-7">
+                    <h6 class="text-center">
+                        Tus comentarios
+                    </h6>
+                    <app-list-coment></app-list-coment>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+.col-md-auto {
+    display: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 20px 20px 40px -10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 60px;
+    background-color: #F0F7F4;
+}
+
+.input,
+.textarea {
+    font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.container {
+    width: 800px;
+    display: baseline;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+.card-aux {
+    box-shadow: 20px 20px 40px -10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 0.5px;
+    width: 300px;
+    height: 320px;
+    display: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #002B69;
+    border-color: #002B69;
+    width: 100%;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:visited,
+.btn-secondary:focus {
+    background-color: #00693E;
+    border-color: #00693E;
+    width: 100%;
+}

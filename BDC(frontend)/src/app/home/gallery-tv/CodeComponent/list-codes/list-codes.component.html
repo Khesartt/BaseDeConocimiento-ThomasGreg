@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h5><i class="fas fa-location-arrow"></i>&nbsp;&nbsp;<b>Entradas</b></h5>
+
+        <div class="form-group">
+            <input type="text" [(ngModel)]="buscar" placeholder="Buscar Jquery" name="buscar" class="form-control">
+        </div>
+        <br>
+        <div class="list-group" (click)="codigoSeleccionado(code)" *ngFor="let code of codeService.listCode | filter : buscar">
+            <a class="list-group-item list-group-item-action" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">>>> {{code.nombre}}</h5>
+                </div>
+                <p class="mb-1">categoria: {{code.categoria}}</p>
+
+            </a>
+        </div>
+
+    </div>
+</body>
+
+</html>

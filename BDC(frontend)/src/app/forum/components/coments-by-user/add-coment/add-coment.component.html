@@ -1,0 +1,20 @@
+<div class="container">
+    <hr>
+    <form [formGroup]="form" (ngSubmit)="guardarComentario()" id="formid">
+        <div class="form-group">
+            <div class="input-group">
+                <input type="text" class="form-control" formControlName="titulo" placeholder="titulo de tu comentario">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-floating">
+                <textarea class="form-control" name="comentarioText" formControlName="comentarioText" placeholder="escribe tu comentario aqui" style="height: 200px;" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">escribe tu comentario aqui</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-success btn-lg btn-block col-md-9" [disabled]="form.invalid" type="submit">Enviar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,46 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+}
+
+
+/*contiene la barra de navegacion me permite ajustar su largo y ancho a conveniencia de la pantalla*/
+
+.container-fluid {
+    height: 10px;
+    width: 490px;
+}
+
+.body {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*parametros para lo que contiene la barra de navegacion mientras poso sobre ellos con el mouse*/
+
+.nav-link:hover {
+    font-weight: 80px;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+
+/*parametros para lo que contiene la barra de navegacion*/
+
+.nav-link {
+    font-size: 20px;
+    margin: 10px;
+    color: #000000;
+    font-weight: 80px;
+}
+
+
+/*contiene el fondo de la barra de navegacion*/
+
+.menu-bar {
+    background-image: linear-gradient(0deg, #00A718, #3AA900);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 80px;
+}

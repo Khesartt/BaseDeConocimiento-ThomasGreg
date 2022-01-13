@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" style="padding-bottom: 10px;">
+            <div class="col-md-auto">
+                <div class="card-aux">
+                    <div class="card-header" style="text-align: center; align-items: center;
+                align-self: center;"><i class="fas fa-exclamation fa-2x"></i></div>
+                    <div class="card-body">
+                        <h5 style="text-align: center;">si quieres editar, eliminar o comentar</h5>
+                        <h5 style="text-align: center;">por favor ingresa primero.</h5>
+                        <br>
+                        <button routerLink='login' class="btn btn-primary" style="padding-top: 10px;" type="button"><i class="fas fa-user">&nbsp;&nbsp;Ingreso de usuario</i>
+                          </button>
+                        <hr>
+                        <button routerLink='register' class="btn btn-secondary" style="padding-top: 10px;" type="button">
+                          <i class="fas fa-sign-in-alt" >&nbsp;&nbsp;Registro de usuario</i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md" style="padding-bottom: 10px;">
+
+                <div class="container">
+                    <hr>
+                    <div class="form-group" style="padding-bottom: 10px;">
+
+                        <input type="text" [(ngModel)]="buscar" placeholder="Buscar Comentario" name="buscar" class="form-control">
+
+                    </div>
+
+
+
+
+
+                    <br>
+                    <div class="card" *ngFor="let coment of comentService.listComent | filter : buscar" style="padding-bottom: 10px;">
+                        <div class="card-header">
+                            <h6>{{coment.id_usuario}}</h6>
+
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{coment.titulo}}</h5>
+                            <p class="card-text">{{coment.comentarioText}}</p>
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+
+</html>

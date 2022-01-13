@@ -1,0 +1,13 @@
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\bin\Debug\netcoreapp3.1\BDC.Dominio.exe
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\bin\Debug\netcoreapp3.1\BDC.Dominio.deps.json
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\bin\Debug\netcoreapp3.1\BDC.Dominio.runtimeconfig.json
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\bin\Debug\netcoreapp3.1\BDC.Dominio.runtimeconfig.dev.json
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\bin\Debug\netcoreapp3.1\BDC.Dominio.dll
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\bin\Debug\netcoreapp3.1\BDC.Dominio.pdb
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\obj\Debug\netcoreapp3.1\BDC.Dominio.csproj.AssemblyReference.cache
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\obj\Debug\netcoreapp3.1\BDC.Dominio.AssemblyInfoInputs.cache
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\obj\Debug\netcoreapp3.1\BDC.Dominio.AssemblyInfo.cs
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\obj\Debug\netcoreapp3.1\BDC.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\obj\Debug\netcoreapp3.1\BDC.Dominio.dll
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\obj\Debug\netcoreapp3.1\BDC.Dominio.pdb
+C:\Users\cesar reyes\OneDrive\Desktop\BaseDeConocimientos\BDC_BE\BDC.Dominio\obj\Debug\netcoreapp3.1\BDC.Dominio.genruntimeconfig.cache

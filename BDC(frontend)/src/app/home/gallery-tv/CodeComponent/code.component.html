@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid" *ngIf="check">
+        <h1 style="text-align: center;"> </h1>
+        <div class="jumbtron">
+            <h1 class="text-center"><i class="fas fa-bookmark"></i>&nbsp;&nbsp;Lista de Jquerys</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+
+                    <app-list-codes></app-list-codes>
+                </div>
+                <div class="col-md-7">
+
+                    <app-especific-code></app-especific-code>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

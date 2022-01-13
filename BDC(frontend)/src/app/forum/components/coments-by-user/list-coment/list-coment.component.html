@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <title>BDC</title>
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <div class="form-group" style="padding-bottom: 10px;">
+
+            <input type="text" [(ngModel)]="buscar" placeholder="Buscar Comentario" name="buscar" class="form-control">
+
+        </div>
+
+
+        <br>
+        <div class="card" *ngFor="let comentario of comentService.listComentByUser | filter : buscar" style="padding-bottom: 10px;">
+            <div class="card-header">
+
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{comentario.titulo}}</h5>
+                <p class="card-text">{{comentario.comentarioText}}</p>
+                <hr>
+                <i class="fa fa-edit fa-lg text-info" (click)="editar(comentario)" style="cursor:pointer; padding-bottom: 20px;">&nbsp;&nbsp;Editar</i>
+                <br>
+                <i class="fa fa-trash fa-lg text-danger" (click)="eliminarComentario(comentario.id_comentario!)" style="cursor:pointer;">&nbsp;&nbsp;Eliminar</i>
+
+
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+
+</html>
