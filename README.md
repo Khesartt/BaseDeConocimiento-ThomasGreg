@@ -32,8 +32,10 @@ ejemplo documentacion en swagger del backend
 </div>
 
 
-
+<div align="center">
+ <br> 
+ que tengan bonito dia.  
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
-
+</div>
 
 
