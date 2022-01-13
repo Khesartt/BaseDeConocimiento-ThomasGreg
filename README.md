@@ -21,6 +21,9 @@ ejemplo documentacion en swagger del backend
 <img src="https://github.com/Khesartt/BaseDeConocimiento-ThomasGreg/blob/main/documentacion%20swagger.gif" width="850" height="600" />
 
 </div>
+
+
+
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 
