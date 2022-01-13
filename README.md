@@ -18,13 +18,13 @@ ejemplo de la base de conocimiento
 
   
   
-
+<br> 
 
 ejemplo de registro y login para el foro general
 <img src="https://github.com/Khesartt/BaseDeConocimiento-ThomasGreg/blob/main/login%20y%20register.gif" width="800" height="500" />
 
 
-
+<br> 
   
   
 ejemplo documentacion en swagger del backend
